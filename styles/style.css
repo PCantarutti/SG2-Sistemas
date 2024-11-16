@@ -1,0 +1,57 @@
+@import url("login.css");
+@import url("home.css");
+@import url("produtos.css");
+
+:root {
+    --cor-primaria: #202221;
+    --cor-secundaria: #faca1d;
+    --branco: aliceblue;
+    --font-family: "Montserrat", sans-serif;
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--cor-primaria);
+}
+
+.login::after {
+    background-image: url("../SITE-IMAGENS/icons8-importar-24.png");
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    box-shadow:  5px 5px 10px #606060, -5px -5px 10px #909090;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    max-height: 90%;
+}
+
+header nav ul {
+    all: unset;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 650;
+}

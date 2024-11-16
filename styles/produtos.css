@@ -1,0 +1,16 @@
+.pagina_produtos {
+    height: 100vh;
+    background: var(--cor-secundaria);
+}
+
+.background_circulo {
+    background: var(--cor-primaria);
+    border-bottom-left-radius: 60%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background_circulo h1 {
+    color: var(--cor-secundaria);
+}
