@@ -1,0 +1,46 @@
+.pagina_diferenciais {
+    height: 100vh;
+    display: flex;
+}
+
+.diferenciais_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferenciais_img img {
+    width: 100%;
+}
+
+.descricao_diferenciais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descricao_diferenciais .row {
+    margin-top: 2em;
+}
+
+.descricao_diferenciais h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.descricao_diferenciais h3 {
+    color: var(--cor-secundaria);
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.descricao_diferenciais p {
+    margin: 0 0 0 10px;
+    font-size: 1.7rem;
+}
+
+.diferenciais_texto {
+    display: flex;
+    align-items: center;
+}

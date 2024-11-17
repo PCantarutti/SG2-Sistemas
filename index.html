@@ -14,15 +14,30 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#">Diferenciais</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Clientes</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#clientes">Clientes</a></li>
             </ul>
         </nav>
         <div class="login">
             <a href="#login">Login</a>
         </div>
     </header>
+
+    <!-- Pop-up de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Usuário:<span>*</span></label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:<span>*</span></label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
 
     <section id="home" class="pagina_home">
         <div class="container-sm container_home_texto">
@@ -31,7 +46,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua</p>
             </div>
             <a class="link_apresentacao" href="#">Fale com o Especialista</a>
-            <p>Baixe Agora</p>
+            <p class="download_p">Baixe Agora</p>
             <div class="links_download">
                 <a href=""><img src="SITE-IMAGENS/googleplay.png" alt="baixe pelo googleplay"></a>
                 <a href=""><img src="SITE-IMAGENS/appstore.png" alt="baixe pela appstore"></a>
@@ -41,8 +56,162 @@
 
     <section id="produtos" class="pagina_produtos">
         <div class="background_circulo">
-            <h1>teste</h1>
+            <div class="produtos_info">
+                <h1 class="produtos_texto">Saiba como gerenciar o seu <br> trabalho com os nossos produtos</h1>
+                <p class="produtos_texto">Nós damos praticidade para você.</p>
+                <div>
+                    <div class="produtos_barra">
+                        <p class="produtos_texto">Construtoras</p>
+                        <p class="destaque">Gestor Predial</p>
+                    </div>
+                    <div class="row barra">
+                        <div class="col-sm-5 barra_1"></div>
+                        <div class="col-sm barra_2"></div>
+                    </div>
+                </div>
+                <div class="container text-center produtos_items">
+                    <div class="row">
+                        <div class="item_1 col-sm-5">
+                            <img src="SITE-IMAGENS/P_1.png" alt=""><a href="#"><h2 class="produtos_texto">Databook &#10151</h2></a>
+                        </div>
+                        <div class="item_2 col-sm">
+                            <img src="SITE-IMAGENS/P_2.png" alt=""><a href="#"><h2 class="produtos_texto">Vistoria de Pré-Entrega &#10151;</h2></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item_3 col-sm-4">
+                            <img src="SITE-IMAGENS/P_3.png" alt=""><a href="#"><h2 class="produtos_texto">As Built &#10151;</h2></a>
+                        </div>
+                        <div class="item_4 col-sm">
+                            <img src="SITE-IMAGENS/P_4.png" alt=""><a href="#"><h2 class="produtos_texto">Manual de uso, operações &#10151;<br> e Manutenção</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produtos_img"></div>
         </div>
     </section>
+
+    <section id="diferenciais" class="pagina_diferenciais">
+        <div class="container diferenciais_img">
+            <img src="SITE-IMAGENS/notebook.png" alt="">
+        </div>
+        <div class="container descricao_diferenciais">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <div class="row">
+                <div class="col-sm-2 diferenciais_texto"><h3>78%</h3></div>
+                <div class="col-sm-7 diferenciais_texto"><p>Aut fugit maxime eos possimus rerum sit repudiandae reiciendis ut voluptate</p></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 diferenciais_texto"><h3>85%</h3></div>
+                <div class="col-sm-7 diferenciais_texto"><p>Non deserunt fugit ex dolore tempora in accusantium fugit.<p></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 diferenciais_texto"><h3>99%</h3></div>
+                <div class="col-sm-7 diferenciais_texto"><p>Aut architecto sint non quos veritatis in perspiciatis</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="pagina_contato">
+        <h2>Contato</h2>
+        <h3>Ficou Interessado?</h3>
+        <p>Solicite um orçamento preenchendo o formulário abaixo:</p>
+        <form action="#" method="post">
+            <label for="nome">Seu Nome:<span>*</span></label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:<span>*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:<span>*</span></label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="mensagem">Mensagem:<span>*</span></label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button class="submit_btn" type="submit">Solicitar Demonstração</button>
+        </form>
+    </section>
+
+    <section id="clientes" class="pagina_clientes">
+        <h2>Alguns de nossos clientes</h2>
+        <div class="slider">
+
+            <div class="slide_track">
+                
+                <div class="slide">
+                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="">
+                </div>
+
+                <!-- imagens repetidas para o carrossel -->
+
+                <div class="slide">
+                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="foot_info">
+                <h3><span><img src="SITE-IMAGENS/location.png" alt="localização"></span>Endereço São Paulo</h3>
+                <p>Rua Bela Cintra, 1466/31 - Jardim Paulista, São Paulo - SP - 01415-004</p>
+                <p><span><img src="SITE-IMAGENS/phone.png" alt="telefone"></span>+55 (11) 94440-9449</p>
+            </div>
+            <div class="foot_info">
+                <h3><span><img src="SITE-IMAGENS/location.png" alt="localização"></span>Endereço Belo Horizonte</h3>
+                <p>Rua Dr. Ary Ferreira, 100 - São Bento, Belo Horizonte - MG - 30350 490</p>
+                <p><span><img src="SITE-IMAGENS/phone.png" alt="telefone"></span>+55 (31) 98728-6888</p>
+            </div>
+            <div class="foot_info">
+                <h3><span><img src="SITE-IMAGENS/email.png" alt="email"></span>Email de Contato</h3>
+                <p>contato@sg2sistemas.com.br</p>
+            </div>
+            <div class="foot_info">
+                <span><img src="SITE-IMAGENS/facebook.png" alt="facebook"></span>
+                <span><img src="SITE-IMAGENS/instagram.png" alt="instagram"></span>
+                <span><img src="SITE-IMAGENS/linkedin.png" alt="linkedin"></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>Normas</h3>
+            <p>Todos os sistemas são desenvolvidos baseados em normas pré-estabelecidas que
+            seguem as normas da Associação Brasileira de Normas Técnicas - ABNT, Lei n
+            8.078, de 11 de setembro de 1990 - Código de Proteção e Defesa do Consumidor, Lei
+            n 10.406, de 10 de janeiro de 2002 - Código Civil, e nos manuais de garantia de
+            cada Estado, como no Manual de Garantias do Sinduscon, Secovi e o CBIC.</p>
+        </div>
+    </footer>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/contato.js"></script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 @import url("login.css");
 @import url("home.css");
 @import url("produtos.css");
+@import url("diferenciais.css");
+@import url("contatos.css");
+@import url("clientes.css");
 
 :root {
     --cor-primaria: #202221;
@@ -27,7 +30,7 @@
 
 header {
     width: 100vw;
-    height: 8vh;
+    height: 12vh;
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -36,22 +39,72 @@ header {
     box-shadow:  5px 5px 10px #606060, -5px -5px 10px #909090;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 header img {
-    max-height: 90%;
+    height: 80%;
 }
 
 header nav ul {
     all: unset;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     list-style: none;
 }
 
 header nav a {
+    font-size: 24px;
     text-decoration: none;
     color: var(--branco);
-    font-weight: 650;
+    font-weight: 550;
+}
+
+.background_circulo .produtos_img {
+    background-image: url(../SITE-IMAGENS/a236bc9e5747e82cdd6f3718bff2154b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background-color: var(--cor-primaria);
+    margin-top: 4%;
+    position: absolute;
+    z-index: 3;
+}
+
+footer h3 {
+    color: var(--branco);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+footer p {
+    color: #a6a6a6;
+    font-size: 1.4rem;
+}
+
+footer .container {
+    padding: 40px;
+}
+
+footer .foot_info {
+    margin-bottom: 40px;
+}
+
+footer span {
+    margin-right: 10px;
+}
+
+label span {
+    color: red;
+    font-size: 1.1rem;
+}
+
+span.preenchido {
+    display: none;
 }
