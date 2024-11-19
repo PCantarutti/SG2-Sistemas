@@ -1,5 +1,4 @@
 .pagina_home {
-    background-image: url(/SITE-IMAGENS/7d74eae5015dff9d9fe6b855116f747d.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: bottom;
@@ -10,8 +9,8 @@
 .container_home_texto {
     display: flex;
     flex-direction: column;
-    margin: 2em auto auto 7em;
-    padding-right: 5%;
+    padding: 2em 5% 0 7em;
+    margin: 0;
 }
 
 .container_home_texto p {
@@ -74,7 +73,7 @@
     }
     
     .container_home_texto {
-        margin: 2em 0 0 2em;
+        padding: 2em 0 0 2em;
         padding-right: 35%;
     }
     
@@ -84,7 +83,6 @@
     
     .link_apresentacao {
         margin: 2em 0 2em 0;
-        transition-duration: 500ms;
     }
     
     .links_download a img {
@@ -106,7 +104,7 @@
     }
     
     .container_home_texto {
-        margin: 2em 2em 0 2em;
+        padding: 2em 2em 0 2em;
         padding-right: 10%;
     }
     
@@ -135,5 +133,19 @@
 }
 
 @media(max-width: 500px) {
-    
+    .home_apresentacao p {
+        padding-right: 0;
+        font-size: 1.2rem;
+    }
+
+    .link_apresentacao {
+        width: 50%;
+        margin: 1em 0 1em 0;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .links_download a img {
+        width: 55%;
+    }
 }

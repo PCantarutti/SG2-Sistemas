@@ -114,7 +114,8 @@ a {
 
 @media(max-width: 950px) {
     .background_circulo .produtos_img {
-        height: 30%;
+        width: 100%;
+        height: 25%;
         position: absolute;
         top: 0;
     }
@@ -131,10 +132,6 @@ a {
     .background_circulo .produtos_info {
         width: 100%;
         padding: 1em 0em 0 1em;
-    }
-    
-    .background_circulo .produtos_img {
-        width: 100%;
     }
     
     .tipos_produtos {
@@ -156,5 +153,31 @@ a {
     .produtos_items {
         padding-right: 20%;
         margin-left: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .background_circulo .produtos_img {
+        height: 20%;
+    }
+
+    .produtos_info h1 {
+        font-size: 2.2rem;
+    }
+
+    .produtos_info p {
+        font-size: 1.3rem;
+    }
+
+    p.produtos_texto {
+        padding-right: 1em;
+    }
+
+    .produtos_items .row h2 {
+        font-size: 1.2rem;
+    } 
+
+    .produtos_items .row div {
+        padding: 5px;
     }
 }

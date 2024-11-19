@@ -28,6 +28,10 @@
     background-image: url("../SITE-IMAGENS/icons8-importar-24.png");
 }
 
+.pagina_home {
+    background-image: url(/SITE-IMAGENS/7d74eae5015dff9d9fe6b855116f747d.png);
+}
+
 .background_circulo .produtos_img {
     background-image: url(../SITE-IMAGENS/a236bc9e5747e82cdd6f3718bff2154b.jpeg);
     background-repeat: no-repeat;
