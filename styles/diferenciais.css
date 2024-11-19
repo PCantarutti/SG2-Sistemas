@@ -44,3 +44,51 @@
     display: flex;
     align-items: center;
 }
+
+@media(max-width: 1740px) {
+    .descricao_diferenciais h2 {
+        font-size: 2.5rem;
+    }
+
+    .descricao_diferenciais p {
+        margin: 0 0 0 60px;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 1180px) {
+    .pagina_diferenciais {
+        flex-direction: column;
+        padding-top: 5em;
+    }
+    
+    .diferenciais_img img {
+        width: 55%;
+    }
+    
+    .descricao_diferenciais .row {
+        justify-content: center;
+    }
+    
+    .descricao_diferenciais h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .descricao_diferenciais h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 580px) {
+    /* ajustar talvez fazer em coluna */
+    .diferenciais_texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .diferenciais_texto p {
+        margin-left: 0;
+    }
+}

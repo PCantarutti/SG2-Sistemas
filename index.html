@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>SG2</title>
 </head>
+
 <body>
     <header class="cabecalho">
+        <div class="hamburguer" onclick="toggleMenu()">
+            <span class="menu_span-1"></span>
+            <span class="menu_span-2"></span>
+        </div>
         <img src="SITE-IMAGENS/1_logo_final_SG2 1.png" alt="logo SG2">
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
@@ -42,7 +47,7 @@
     <section id="home" class="pagina_home">
         <div class="container-sm container_home_texto">
             <div class="home_apresentacao">
-                <h1><strong class="titulo_strong">Lorem Ipsum</strong> <strong>consectetur adipiscing <br> elit, sed do eiusmod tempor</strong></h1>
+                <h1><strong class="titulo_strong">Lorem Ipsum</strong><strong> consectetur adipiscing <br> elit, sed do eiusmod tempor</strong></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua</p>
             </div>
             <a class="link_apresentacao" href="#">Fale com o Especialista</a>
@@ -59,7 +64,7 @@
             <div class="produtos_info">
                 <h1 class="produtos_texto">Saiba como gerenciar o seu <br> trabalho com os nossos produtos</h1>
                 <p class="produtos_texto">Nós damos praticidade para você.</p>
-                <div>
+                <div class="tipos_produtos">
                     <div class="produtos_barra">
                         <p class="produtos_texto">Construtoras</p>
                         <p class="destaque">Gestor Predial</p>
@@ -83,7 +88,7 @@
                             <img src="SITE-IMAGENS/P_3.png" alt=""><a href="#"><h2 class="produtos_texto">As Built &#10151;</h2></a>
                         </div>
                         <div class="item_4 col-sm">
-                            <img src="SITE-IMAGENS/P_4.png" alt=""><a href="#"><h2 class="produtos_texto">Manual de uso, operações &#10151;<br> e Manutenção</h2></a>
+                            <img src="SITE-IMAGENS/P_4.png" alt=""><a href="#"><h2 class="produtos_texto">Manual de uso, operações <br> e Manutenção &#10151;</h2></a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +161,7 @@
                     <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="">
                 </div>
 
-                <!-- imagens repetidas para o carrossel -->
+                <!-- imagens repetidas para o carrossel (remover caso adicionar imagem nova) -->
 
                 <div class="slide">
                     <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="">
@@ -212,6 +217,7 @@
         </div>
     </footer>
     <script src="./scripts/login.js"></script>
+    <script src="./scripts/menu.js"></script>
     <script src="./scripts/contato.js"></script>
 </body>
 </html>

@@ -53,3 +53,10 @@
     scale: 101%;
     box-shadow:  5px 5px 10px #afafaf, -5px -5px 10px #ffffff;
 }
+
+@media(max-width: 950px) {
+    .pagina_contato {
+        height: 100vh;
+        padding: 8em 2em;
+    }
+}

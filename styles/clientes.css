@@ -1,5 +1,5 @@
 .pagina_clientes {
-    height: 20vh;
+    padding-top: 4em;
 }
 
 .pagina_clientes h2 {
@@ -53,7 +53,6 @@
 .slider::before, .slider::after {
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     content: "";
-    /* remover height ao sair de 1920p  */
     height: 100vh;
     position: absolute;
     width: 10%;
@@ -69,4 +68,24 @@
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+
+@media(max-width: 950px) {
+    /* ajustar tamanho */
+    .slide_track {
+        width: calc(250px * 10);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px * 5));
+        }
+    }
+    
+    .slide {
+        width: 250px;
+    }
 }
