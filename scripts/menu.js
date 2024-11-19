@@ -8,5 +8,3 @@ function ativarMenu() {
         elemento.classList.toggle('ativo');
     });
 }
-
-//     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
