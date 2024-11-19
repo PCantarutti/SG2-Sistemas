@@ -65,8 +65,7 @@
     color: #333;
 }
 
-.modal-content input[type="text"],
-.modal-content input[type="password"] {
+#loginModal #username, #password {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
