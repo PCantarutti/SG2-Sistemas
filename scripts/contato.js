@@ -15,4 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         span.classList.add("preenchido");
                     }
                 }
-}});});});
+            }
+        });
+    });
+});

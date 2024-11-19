@@ -10,12 +10,12 @@
 
 <body>
     <header class="cabecalho">
-        <div class="hamburguer" onclick="toggleMenu()">
+        <div class="hamburguer" onclick="ativarMenu()">
             <span class="menu_span-1"></span>
             <span class="menu_span-2"></span>
         </div>
         <img src="SITE-IMAGENS/1_logo_final_SG2 1.png" alt="logo SG2">
-        <nav class="menu">
+        <nav class="menu desativado">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
@@ -44,17 +44,43 @@
         </div>
     </div>
 
+    <!-- Pop-up chat -->
+    <div id="chatModal" class="modal_chat">
+        <div class="chat_content">
+            <div class="chat_header">
+                <h4>Chat</h4>
+                <span class="close_chat">&times;</span>
+            </div>
+
+            <div class="chat_body">
+                <div class="mensagens">
+                    <p class="mensagem bot">Olá! Como posso ajudar?</p>
+                </div>
+                <div id="loader" class="mensagem bot"></div>
+            </div>
+
+            <div class="chat_footer">
+                <input type="text" id="chatInput" placeholder="Digite uma mensagem...">
+            <button id="enviarButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat_btn" id="chat_btn">
+        <a class="chat_img" href="#chat"><img src="SITE-IMAGENS/chat_logo.png" alt="chat"></a>
+    </div>
+
     <section id="home" class="pagina_home">
         <div class="container-sm container_home_texto">
             <div class="home_apresentacao">
                 <h1><strong class="titulo_strong">Lorem Ipsum</strong><strong> consectetur adipiscing elit, sed do eiusmod tempor</strong></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua</p>
             </div>
-            <a class="link_apresentacao" href="#">Fale com o Especialista</a>
+            <a class="link_apresentacao" href="#contato">Fale com o Especialista</a>
             <p class="download_p">Baixe Agora</p>
             <div class="links_download">
-                <a href=""><img src="SITE-IMAGENS/googleplay.png" alt="baixe pelo googleplay"></a>
-                <a href=""><img src="SITE-IMAGENS/appstore.png" alt="baixe pela appstore"></a>
+                <a href="https://play.google.com/"><img src="SITE-IMAGENS/googleplay.png" alt="baixe pelo googleplay"></a>
+                <a href="https://www.apple.com/app-store/"><img src="SITE-IMAGENS/appstore.png" alt="baixe pela appstore"></a>
             </div>
         </div>
     </section>
@@ -77,18 +103,18 @@
                 <div class="container text-center produtos_items">
                     <div class="row">
                         <div class="item_1 col-sm-5">
-                            <img src="SITE-IMAGENS/P_1.png" alt=""><a href="#"><h2 class="produtos_texto">Databook &#10151</h2></a>
+                            <img src="SITE-IMAGENS/P_1.png"><a href="#"><h2 class="produtos_texto">Databook &#10151</h2></a>
                         </div>
                         <div class="item_2 col-sm">
-                            <img src="SITE-IMAGENS/P_2.png" alt=""><a href="#"><h2 class="produtos_texto">Vistoria de Pré-Entrega &#10151;</h2></a>
+                            <img src="SITE-IMAGENS/P_2.png"><a href="#"><h2 class="produtos_texto">Vistoria de Pré-Entrega &#10151;</h2></a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="item_3 col-sm-4">
-                            <img src="SITE-IMAGENS/P_3.png" alt=""><a href="#"><h2 class="produtos_texto">As Built &#10151;</h2></a>
+                            <img src="SITE-IMAGENS/P_3.png"><a href="#"><h2 class="produtos_texto">As Built &#10151;</h2></a>
                         </div>
                         <div class="item_4 col-sm">
-                            <img src="SITE-IMAGENS/P_4.png" alt=""><a href="#"><h2 class="produtos_texto">Manual de uso, operações <br> e Manutenção &#10151;</h2></a>
+                            <img src="SITE-IMAGENS/P_4.png"><a href="#"><h2 class="produtos_texto">Manual de uso, operações <br> e Manutenção &#10151;</h2></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +125,7 @@
 
     <section id="diferenciais" class="pagina_diferenciais">
         <div class="container diferenciais_img">
-            <img src="SITE-IMAGENS/notebook.png" alt="">
+            <img src="SITE-IMAGENS/notebook.png" alt="compatível em qualquer dispositivo">
         </div>
         <div class="container descricao_diferenciais">
             <h2>Lorem ipsum dolor sit amet.</h2>
@@ -146,37 +172,37 @@
             <div class="slide_track">
                 
                 <div class="slide">
-                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="">
+                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="Cliente 1">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="">
+                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="Cliente 2">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="">
+                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="Cliente 3">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="">
+                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="Cliente 4">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="">
+                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="Cliente 5">
                 </div>
 
                 <!-- imagens repetidas para o carrossel (remover caso adicionar imagem nova) -->
 
                 <div class="slide">
-                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="">
+                    <img src="SITE-IMAGENS/06907b78e384e3e4b1aa3f20f2b08c8c.png" alt="Cliente 1">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="">
+                    <img src="SITE-IMAGENS/3db5094617aebfa57d6737d4df967698.png" alt="Cliente 2">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="">
+                    <img src="SITE-IMAGENS/ab6a249dc68bbf53305b11fdf6fb96b3.png" alt="Cliente 3">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="">
+                    <img src="SITE-IMAGENS/42a9340fa20167eccc375af6b2bc29a4.png" alt="Cliente 4">
                 </div>
                 <div class="slide">
-                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="">
+                    <img src="SITE-IMAGENS/cf6d12dbadd433cf1d18447c0850e398.png" alt="Cliente 5">
                 </div>
 
             </div>
@@ -201,9 +227,9 @@
                 <p>contato@sg2sistemas.com.br</p>
             </div>
             <div class="foot_info">
-                <span><img src="SITE-IMAGENS/facebook.png" alt="facebook"></span>
-                <span><img src="SITE-IMAGENS/instagram.png" alt="instagram"></span>
-                <span><img src="SITE-IMAGENS/linkedin.png" alt="linkedin"></span>
+                <span><a href="https://www.facebook.com/"><img src="SITE-IMAGENS/facebook.png" alt="facebook"></a></span>
+                <span><a href="https://www.instagram.com/"><img src="SITE-IMAGENS/instagram.png" alt="instagram"></a></span>
+                <span><a href="https://www.linkedin.com"><img src="SITE-IMAGENS/linkedin.png" alt="linkedin"></a></span>
             </div>
         </div>
 
@@ -216,7 +242,15 @@
             cada Estado, como no Manual de Garantias do Sinduscon, Secovi e o CBIC.</p>
         </div>
     </footer>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
     <script src="./scripts/login.js"></script>
+    <script src="./scripts/chat.js" type="module"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/contato.js"></script>
 </body>
