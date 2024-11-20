@@ -2,8 +2,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: bottom;
-    height: 100vh;
-    padding-top: 12vh;
+    height: 920px;
+    padding-top: 110px;
 }
 
 .container_home_texto {
@@ -99,8 +99,6 @@
         background-size: 180%;
         background-position-x: right;
         background-position-y: bottom;
-        height: 100vh;
-        padding-top: 12vh;
     }
     
     .container_home_texto {

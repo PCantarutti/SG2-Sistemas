@@ -1,5 +1,5 @@
 .pagina_contato {
-    height: 100vh;
+    height: 920px;
     padding: 8em 7em;
 }
 
@@ -56,7 +56,6 @@
 
 @media(max-width: 950px) {
     .pagina_contato {
-        height: 100vh;
         padding: 8em 2em;
     }
 }

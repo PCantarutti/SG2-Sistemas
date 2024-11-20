@@ -9,8 +9,14 @@ ligarChat.addEventListener('click', ativarChat);
 const desativarChat = document.querySelector('.close_chat');
 desativarChat.addEventListener('click', ativarChat);
 
+const chatInput = document.getElementById('chatInput');
 const enviarButton = document.getElementById('enviarButton');
 enviarButton.addEventListener('click', gerarResposta);
+chatInput.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+        gerarResposta();
+    }
+});
 
 
 
@@ -20,7 +26,6 @@ function ativarChat() {
 }
 
 async function gerarResposta() {
-    const chatInput = document.getElementById('chatInput');
     const mensagens = document.querySelector('.mensagens');
     const loading = document.getElementById('loader');
     const prompt = chatInput.value;

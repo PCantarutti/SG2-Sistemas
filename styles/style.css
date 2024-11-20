@@ -44,7 +44,7 @@
 
 header {
     width: 100vw;
-    height: 12vh;
+    height: 110px;
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -147,7 +147,7 @@ span.preenchido {
         display: none;
         position: absolute;
         padding: 10px 20px;
-        top: 12vh;
+        top: 110px;
         left: 0;
         background-color: var(--cor-primaria);
         width: fit-content;
@@ -227,5 +227,11 @@ span.preenchido {
 @media(max-width: 500px) {
     header img {
         height: 60%;
+    }
+}
+
+@media(max-height: 440px) {
+    .menu ul {
+        flex-direction: row;
     }
 }

@@ -161,3 +161,16 @@
         width: 80%;
     }
 }
+
+@media(max-height: 715px) {
+    .modal_chat {
+        right: 15%;
+        bottom: 35%;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .chat_content, .chat_body {
+        height: 200px;
+    }
+}

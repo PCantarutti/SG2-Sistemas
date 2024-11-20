@@ -3,7 +3,7 @@ a {
 }
 
 .pagina_produtos {
-    height: 100vh;
+    height: 920px;
     background: var(--cor-secundaria);
 }
 
@@ -113,6 +113,11 @@ a {
 }
 
 @media(max-width: 950px) {
+
+    .pagina_produtos {
+        height: 800px;
+    }
+
     .background_circulo .produtos_img {
         width: 100%;
         height: 25%;
